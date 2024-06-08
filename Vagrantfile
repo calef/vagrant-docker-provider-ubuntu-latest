@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
 
     docker_vm.vm.provider :docker do |docker, override|
       override.vm.box = nil
-      docker.git_repo = "git@github.com:calef/vagrant-docker-provider-ubuntu-latest.git#ruby3.0.7-slim-buster"
+      docker.git_repo = "git@github.com:calef/vagrant-docker-provider-ubuntu-latest.git#ruby3.0.7-buster"
       docker.remains_running = true
       docker.has_ssh = true
       docker.privileged = true

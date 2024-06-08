@@ -1,7 +1,7 @@
 # vagrant-docker-provider-ubuntu-latest
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-An ruby3.0.7-slim-buster docker image to use as a vagrant docker provider.
+An ruby3.0.7-buster docker image to use as a vagrant docker provider.
 
 To use:
 1. Install docker.
