@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ruby:3.0.7-slim-buster
 LABEL MAINTAINER="Chris Alef <chris@crickertech.com>"
 
 ENV DEBIAN_FRONTEND noninteractive

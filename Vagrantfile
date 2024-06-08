@@ -2,11 +2,11 @@ Vagrant.configure("2") do |config|
   # Dynamically set the machine name to the name of the current directory
   current_dir_name = File.basename(Dir.getwd)
   config.vm.define current_dir_name do |docker_vm|
-    docker_vm.vm.hostname = "ubuntu"
+    docker_vm.vm.hostname = "buster"
 
     docker_vm.vm.provider :docker do |docker, override|
       override.vm.box = nil
-      docker.git_repo = "git@github.com:calef/vagrant-docker-provider-ubuntu-latest.git"
+      docker.git_repo = "git@github.com:calef/vagrant-docker-provider-ubuntu-latest.git#ruby3.0.7-slim-buster"
       docker.remains_running = true
       docker.has_ssh = true
       docker.privileged = true
