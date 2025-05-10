@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 LABEL MAINTAINER="Chris Alef <chris@crickertech.com>"
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install packages needed for SSH and interactive OS
 RUN apt-get update && \
