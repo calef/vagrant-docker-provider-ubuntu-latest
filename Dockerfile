@@ -5,7 +5,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install packages needed for SSH and interactive OS
 RUN apt-get update && \
-    yes | unminimize && \
     apt-get -y install \
         openssh-server \
         passwd \
