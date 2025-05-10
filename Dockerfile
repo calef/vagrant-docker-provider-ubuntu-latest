@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+#should be ubuntu:latest but a bug in 24.10 with unminimize prevents this
+FROM ubuntu:24.04
 LABEL MAINTAINER="Chris Alef <chris@crickertech.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
